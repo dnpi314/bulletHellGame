@@ -1,0 +1,86 @@
+{
+	"turrets":
+	[
+		{ 
+			"name": "basic easy",
+			"bulletName": "slow std",
+			"cooldown": 1.5,
+			"aimType": 0,
+			"clipSize": 8,
+			"difficulty": 10 
+		},
+		{
+			"name": "basic medium",
+			"bulletName": "slow std",
+			"cooldown": 1.2,
+			"aimType": 0,
+			"clipSize": 10,
+			"difficulty": 15 
+		},
+		{
+			"name": "sniper 1",
+			"bulletName": "very fast std",
+			"cooldown": 2,
+			"aimType": 0,
+			"clipSize": 5,
+			"difficulty": 20
+		},
+		{
+			"name": "basic curve",
+			"bulletName": "gentle curve",
+			"cooldown": 1.0,
+			"aimType": 0,
+			"clipSize": 6,
+			"difficulty": 15 
+		},
+		{
+			"name": "basic shotgun",
+			"bulletName": "slow std",
+			"cooldown": 2,
+			"aimType": 0,
+			"clipSize": 4,
+			"difficulty": 30,
+			"shotgun":{"amount": 4, "spread": 1.2}
+		},
+		{
+			"name": "basic frag",
+			"bulletName": "slow frag 3",
+			"cooldown": 2.25,
+			"aimType": 0,
+			"clipSize": 5,
+			"difficulty": 15
+		}
+	],
+	"bullets":
+	[
+		{
+			"name": "slow std",
+			"lifeSpan": 10,
+			"speed": 2.75,
+			"moveType": 0
+		},
+		{
+			"name": "very fast std",
+			"lifeSpan": 10,
+			"speed": 6.0,
+			"moveType": 0
+		},
+		{
+			"name": "gentle curve",
+			"lifeSpan": 10,
+			"speed": 3.0,
+			"moveType": 1,
+			"strength": 0.1,
+			"delay": 4.5
+		},
+		{
+			"name": "slow frag 3",
+			"lifeSpan": 4.0,
+			"speed": 2.25,
+			"moveType": 0,
+			"warhead": {"bulletName": "slow std", "amount": 3}
+		}
+	],
+	"difficultyCapStart": 30,
+	"difficultyIncreaseRate": 1.5
+}
