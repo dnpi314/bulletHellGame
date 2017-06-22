@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 33a15bec9844daf4da4e7c15e595daa6
-timeCreated: 1498077775
+timeCreated: 1498157573
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,8 @@ TextureImporter:
     21300002: Bullet
     21300004: Explosive0
     21300006: Explosive1
+    21300008: PowerupHealth
+    21300010: PowerupScore
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -128,6 +130,32 @@ TextureImporter:
         y: 530
         width: 32
         height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PowerupHealth
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 387
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PowerupScore
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 389
+        width: 74
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
