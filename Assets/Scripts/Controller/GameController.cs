@@ -5,6 +5,8 @@ public class GameController : MonoBehaviour
 {
   private static GameController _Instance;
 
+  public static float scoreMultiplier = 1;
+
   private bool gameActive;
   private GameObject player;
   private GameObject gameOverScreen;
@@ -25,7 +27,7 @@ public class GameController : MonoBehaviour
   private void Update()
   {
     if(gameActive)
-      Player.score += TurretController.Difficulty * Time.deltaTime;
+      Player.score += TurretController.Difficulty * Time.deltaTime * scoreMultiplier;
   }
 
   private void GameOver()
