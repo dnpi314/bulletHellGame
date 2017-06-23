@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,6 +17,7 @@ public class TurretController : MonoBehaviour
   private int difficultyCap;
   private float difficultyFloat;
   private float difficultyIncreaseRate;
+  private float difficultyBase = 0;
 
   public float radius;
 
@@ -103,12 +103,14 @@ public class TurretController : MonoBehaviour
 
     locationCounts[nextLocation]++;
     activeTurrets.Add(new Turret(data, (Turret.Location)nextLocation));
-    currentDifficulty += data.difficulty;
+    difficultyBase += data.difficulty;
+    currentDifficulty = (int)(difficultyBase * Mathf.Pow(1.2f, activeTurrets.Count - 1));
   }
 
   private void RemoveTurret(Turret turret)
   {
-    currentDifficulty -= turret.GetDifficulty();
+    difficultyBase -= turret.GetDifficulty();
+    currentDifficulty = (int)(difficultyBase * Mathf.Pow(1.2f, activeTurrets.Count - 1));
     activeTurrets.Remove(turret);
   }
 

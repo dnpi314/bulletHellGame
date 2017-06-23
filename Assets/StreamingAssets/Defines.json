@@ -40,7 +40,7 @@
 			"aimType": 0,
 			"clipSize": 4,
 			"difficulty": 30,
-			"shotgun":{"amount": 4, "spread": 1.2}
+			"shotgun": {"amount": 4, "spread": 1.2}
 		},
 		{
 			"name": "basic frag",
@@ -49,6 +49,39 @@
 			"aimType": 0,
 			"clipSize": 5,
 			"difficulty": 15
+		},
+		{
+			"name": "random wide burst",
+			"bulletName": "medium std",
+			"cooldown": 2.25,
+			"aimType": 2,
+			"clipSize": 5,
+			"difficulty": 25,
+			"shotgun": {"amount": 6, "spread": 2.9}
+		},
+		{
+			"name": "basic homing",
+			"bulletName": "slow weak homing",
+			"cooldown": 2,
+			"aimType": 1,
+			"clipSize": 6,
+			"difficulty": 30
+		},
+		{
+			"name": "mine layer easy",
+			"bulletName": "blitz homing",
+			"cooldown": 3,
+			"aimType": 2,
+			"clipSize": 8,
+			"difficulty": 20
+		},
+		{
+			"name": "flak easy",
+			"bulletName": "slow shrapnel bomb",
+			"cooldown": 2.75,
+			"aimType": 1,
+			"clipSize": 6,
+			"difficulty": 30
 		}
 	],
 	"bullets":
@@ -57,6 +90,12 @@
 			"name": "slow std",
 			"lifeSpan": 10,
 			"speed": 2.75,
+			"moveType": 0
+		},
+		{
+			"name": "medium std",
+			"lifeSpan": 10,
+			"speed": 3.25,
 			"moveType": 0
 		},
 		{
@@ -75,12 +114,41 @@
 		},
 		{
 			"name": "slow frag 3",
-			"lifeSpan": 4.0,
+			"lifeSpan": 4,
 			"speed": 2.25,
 			"moveType": 0,
 			"warhead": {"bulletName": "slow std", "amount": 3}
+		},
+		{
+			"name": "slow weak homing",
+			"lifeSpan": 7.5,
+			"speed": 2.5,
+			"moveType": 2,
+			"strength": 0.8,
+			"delay": 2.5
+		},
+		{
+			"name": "blitz homing",
+			"lifeSpan": 4,
+			"speed": 3,
+			"moveType": 2,
+			"strength": 3,
+			"delay": 3.2
+		},
+		{
+			"name": "shrapnel cloud",
+			"lifeSpan": 1.75,
+			"speed": 0.7,
+			"moveType": 0
+		},
+		{
+			"name": "slow shrapnel bomb",
+			"lifeSpan": 4,
+			"speed": 2.25,
+			"moveType": 0,
+			"warhead": {"bulletName": "shrapnel cloud", "amount": 16}
 		}
 	],
-	"difficultyCapStart": 30,
-	"difficultyIncreaseRate": 1.5
+	"difficultyCapStart": 60,
+	"difficultyIncreaseRate": 1.2
 }
